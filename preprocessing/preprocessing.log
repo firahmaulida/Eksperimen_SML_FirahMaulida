@@ -1,0 +1,28 @@
+2026-06-02 00:19:24 | INFO     | ============================================================
+2026-06-02 00:19:24 | INFO     |   PIPELINE PREPROCESSING TELCO CUSTOMER CHURN
+2026-06-02 00:19:24 | INFO     |   Author: FirahMaulida
+2026-06-02 00:19:24 | INFO     | ============================================================
+2026-06-02 00:19:24 | INFO     | Memuat dataset dari: D:\DICODING\Eksperimen_SML_FirahMaulida\preprocessing\..\namadataset_raw\WA_Fn-UseC_-Telco-Customer-Churn.csv
+2026-06-02 00:19:24 | INFO     | Dataset berhasil dimuat. Shape: (7043, 21)
+2026-06-02 00:19:24 | INFO     | Memulai proses data cleaning...
+2026-06-02 00:19:24 | INFO     | TotalCharges: 11 nilai kosong baru ditemukan setelah konversi (total NaN sebelum=0, sesudah=11).
+2026-06-02 00:19:24 | INFO     | Missing values TotalCharges diisi dengan median = 1397.47
+2026-06-02 00:19:24 | INFO     | Kolom 'customerID' berhasil dihapus.
+2026-06-02 00:19:24 | INFO     | Data cleaning selesai. Shape sekarang: (7043, 20)
+2026-06-02 00:19:24 | INFO     | Melakukan Label Encoding untuk 6 fitur biner...
+2026-06-02 00:19:24 | INFO     |   └─ gender: ['Female', 'Male'] → [0, 1]
+2026-06-02 00:19:24 | INFO     |   └─ Partner: ['No', 'Yes'] → [0, 1]
+2026-06-02 00:19:24 | INFO     |   └─ Dependents: ['No', 'Yes'] → [0, 1]
+2026-06-02 00:19:24 | INFO     |   └─ PhoneService: ['No', 'Yes'] → [0, 1]
+2026-06-02 00:19:24 | INFO     |   └─ PaperlessBilling: ['No', 'Yes'] → [0, 1]
+2026-06-02 00:19:24 | INFO     |   └─ Churn: ['No', 'Yes'] → [0, 1]
+2026-06-02 00:19:24 | INFO     | Melakukan One-Hot Encoding untuk 10 fitur multi-label...
+2026-06-02 00:19:24 | INFO     | One-Hot Encoding selesai. Shape sekarang: (7043, 41)
+2026-06-02 00:19:24 | INFO     | Melakukan StandardScaler untuk fitur numerik: ['tenure', 'MonthlyCharges', 'TotalCharges']
+2026-06-02 00:19:24 | INFO     | Scaling selesai. Mean per fitur: {'tenure': np.float64(32.371), 'MonthlyCharges': np.float64(64.762), 'TotalCharges': np.float64(2281.917)}
+2026-06-02 00:19:25 | INFO     | Output disimpan di: D:\DICODING\Eksperimen_SML_FirahMaulida\preprocessing\..\preprocessed_output\telco_churn_preprocessed.csv | Shape akhir: (7043, 41)
+2026-06-02 00:19:25 | INFO     | ============================================================
+2026-06-02 00:19:25 | INFO     |   PIPELINE SELESAI DENGAN SUKSES!
+2026-06-02 00:19:25 | INFO     |   Total fitur akhir : 41 kolom
+2026-06-02 00:19:25 | INFO     |   Total baris       : 7043 sampel
+2026-06-02 00:19:25 | INFO     | ============================================================
